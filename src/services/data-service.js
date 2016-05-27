@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 const dataService = store => next => action => {
+	next(action)
 	switch (action.type) {
 	case 'GET_TODO_DATA':
 		request
