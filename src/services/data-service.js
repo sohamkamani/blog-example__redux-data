@@ -21,7 +21,6 @@ const dataService = store => next => action => {
 			})
 		break
 	default:
-		next(action)
 		break
 	}
 
