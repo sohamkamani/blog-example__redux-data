@@ -10,13 +10,7 @@ module.exports = {
 		filename: 'bundle.js',
 		sourceMapFilename: 'bundle.js.map'
 	},
-	plugins: [
-		new webpack.DefinePlugin({
-			'process.env.NODE_ENV': '"' + (process.env.NODE_ENV || 'development') + '"',
-			'process.env.API_ENV': '"' + (process.env.API_ENV || 'local') + '"'
-		})
-	],
-	postcss: function() {
+	postcss: function () {
 		return [precss, autoprefixer];
 	},
 	module: {
