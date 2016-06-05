@@ -5,8 +5,4 @@ To start :
 3. Run ```npm start```
 4. Go to ```localhost:8080``` on your browser.
 
-Create you git hooks :
-
-```sh
-sh hooks/create-hooks.sh
-```
+[Blog post](http://sohamkamani.com/blog/2016/05/06/redux-apis/)
