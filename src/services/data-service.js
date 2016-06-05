@@ -5,7 +5,7 @@ const dataService = store => next => action => {
 	switch (action.type) {
 	case 'GET_TODO_DATA':
 		request
-			.get('/data/todo-data.json')
+			.get('data/todo-data.json')
 			.end((err, res) => {
 				if (err) {
 					return next({
